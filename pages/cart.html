@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <title>ROYAL MUSIC</title>
+</head>
+<body>
+
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- <a> into cart.html -->
+                    <div class="header__logo">
+                        <img src="../assets/img/logo.png" alt="" class="logo">
+                    </div>
+                    <nav class="nav">
+                        <a href="/index.html#products" class="nav__link">products</a>
+                        <a href="#contacts" class="nav__link" data-scroll="contacts">contacts</a>
+                        <a href="#" class="nav__link">
+                            <img src="../assets/img/corzina.png" alt="" class="corzina">
+                            <span class="count hide"></span>
+                        </a>
+                    </nav>
+                    <button type='button' class="nav-toggle" id="nav-toggle">
+                        <span class="nav-toggle__item">'MENU'</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <a href="../index.html" class="btn__back">Back</a>
+            </div>
+
+            <div class="cart">
+                <div class="container">
+                    <div class="cart__title">Cart review</div>
+                    <div class="cart__inner">
+                        <div class="cart__col"></div>
+                        <div class="card">
+                            <div class="card__inner">
+                                <div class="card__title">cart summary</div>
+                                <div class="card__content">
+                                    <div class="card__total-gross">
+                                        <div class="card__name">total gross</div>
+                                        <div class="card__price">$25.00</div>
+                                    </div>
+                                    <div class="card__discount">
+                                        <div class="card__name">discount</div>
+                                        <div class="card__price">-$0.00</div>
+                                    </div>
+                                    <div class="card__total">
+                                        <div class="card__name">total</div>
+                                        <div class="card__price">$25.00</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="card__buy" id="buy-btn">BUY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="modal">
+            <div class="modal__inner">
+                <i class="close__btn material-icons">close</i>
+                <div class="row">
+                    <div class="modal__title">Contact information</div>
+                    <div class="modal__inputs-row">
+                        <div class="col">
+                            <input type="text" class="modal__input" placeholder="recipient">
+                        </div>
+                        <div class="col">
+                            <input type="phone" class="modal__input" placeholder="phone number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal__title">Address</div>
+                    <div class="modal__inputs-row">
+                        <div class="col">
+                            <input type="address" class="modal__input">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="modal__input modal__input--cut" placeholder="flat">
+                            <input type="text" class="modal__input modal__input--cut" placeholder="postcode">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal__text" id="modal__count">Total items: 0</div>
+                    <div class="modal__text" id="modal__price">Total price: 0$</div>
+                </div>
+                <a href="https://promo.yookassa.ru/" target="_blank" class="card__buy">Confrim</a>
+            </div>
+        </div>
+
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__text">© 2022 royal music, Inc.Version: 3.14.0</div>
+                    <div class="footer__social">
+                        <a target="_blank" href="https://www.instagram.com" class="footer__link"><img src="../assets/img/icons8-instagram-50.png" alt=""></a>
+                        <a target="_blank" href="https://ru-ru.facebook.com" class="footer__link"><img src="../assets/img/icons8-facebook-50.png" alt=""></a>
+                        <a target="_blank" href="https://vk.com" class="footer__link"><img src="../assets/img/icons8-vk50.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/scripts/cart-page.js"></script>
+</body>
+</html>
